@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <title>DraktUniverset</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="index">
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"> <img src="images/DraktUniversetLogo8c.png" width="100pxpx" height="100px" /> </a>
+          </div>
+
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Hjemme</a></li>
+              <li><a href="drakter.html">Drakter</a></li>
+              <li><a href="kontakt.html">Kontakt Oss</a></li>
+              <li><a href="konto.html">Konto </a></li>
+              <input type="text" placeholder="Søk.." />
+            </ul>
+          </nav>
+
+          <a href="betaling.html"
+            ><img src="images/cart2.png" width="25px" height="25px"
+          /></a>
+          <img
+            src="images/menu.png"
+            width="25px"
+            height="25px"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Alle drakter</h2>
+        <select>
+          <option>alfabetisk</option>
+          <option>laveste pris</option>
+          <option>høyest pris</option>
+          <option>nyeste</option>
+          <option>kundeomtale</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="drakt-detaljer.html"><img src="images/FCPortoASS0405.png" /></a>
+          <h4>Porto drakt fra 2004</h4>
+          <p>449.00 kr</p>
+        </div>
+
+        <div class="col-4">
+          <a href="drakt-detaljer.html"><img src="images/valerenga-06-home-pi.png" /></a>
+          <h4>Vålerenga drakt fra 2006</h4>
+          <p>649.00 kr</p>
+        </div>
+
+        <div class="col-4">
+          <a href="drakt-detaljer.html"><img src="images/norway-1996-97-home.png" /></a>
+          <h4>Norge drakt fra 1997</h4>
+          <p>999.00 kr</p>
+        </div>
+
+        <div class="col-4">
+         <a href="drakt-detaljer.html"> <img src="images/valerenga-11-away-front.png" /></a>
+          <h4>Vålerenga borte drakt fra 2011</h4>
+          <p>799.00 kr</p>
+        </div>
+
+        <div class="col-4">
+          <a href="drakt-detaljer.html"><img src="images/562375b95d5389b98c392aa635a32dcf.png" /></a>
+          <h4>Manchester United borte drakt fra 1992</h4>
+          <p>599.00 kr</p>
+        </div>
+
+        <div class="col-4">
+          <a href="drakt-detaljer.html"><img src="images/FCPortoASS0405.png" /></a>
+          <h4>Porto drakt fra 2004</h4>
+          <p>699.00 kr</p>
+        </div>
+
+        <div class="col-4">
+          <a href="drakt-detaljer.html"><img src="images/valarenga-00-home.png" /></a>
+          <h4>Vålerenga drakt fra 2000</h4>
+          <p>799.00 kr</p>
+        </div>
+
+        <div class="col-4">
+          <a href="drakt-detaljer.html"> <img src="images/valerenga-11-away-front.png" /></a>
+          <h4>Vålerenga borte drakt fra 2011</h4>
+          <p>799.00 kr</p>
+        </div>
+
+        <div class="col-4">
+          <a href="drakt-detaljer.html"><img src="images/562375b95d5389b98c392aa635a32dcf.png" /></a>
+          <h4>Manchester United borte drakt fra 1992</h4>
+          <p>599.00 kr</p>
+        </div>
+      </div>
+
+       <div class="page-btn">
+         <span>1</span>
+         <span>2</span>
+         <span>3</span>
+         <span>&#8594</span>
+
+       </div>
+
+    </div>
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.height = "0px";
+      function menutoggle() {
+        if (MenuItems.style.height == "0px") {
+          MenuItems.style.height = "200px";
+        } else {
+          MenuItems.style.height = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>DraktUniverset</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+  </head>
+  <body class="index"> 
+
+    <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"> <img src="images/DraktUniversetLogo8c.png" width="100pxpx" height="100px" /> </a>
+        </div>
+        
+        <nav>
+          <ul id="MenuItems">
+            
+            <li><a href="index.html">Hjemme</a></li>
+            <li><a href="drakter.html">Drakter</a></li>
+            <li><a href="kontakt.html">Kontakt Oss</a></li>
+            <li><a href="konto.html">Konto </a></li>
+            <input type="text" placeholder="Søk..">
+            
+            
+            
+          
+          </ul>
+        </nav>
+        
+            <a href="betaling.html"><img src="images/cart2.png" width="25px" height="25px"  ></a>
+            <img src="images/menu.png" width="25px" height="25px" class="menu-icon" onclick="menutoggle()">
+        </div>
+     <div class="row">
+        <div class="col-2">
+          <h1>Velkommen Til Klassiske <br />Fotballdrakter</h1>
+          <p>
+            Hjemmet til klassiske og sjeldne fotballdrakter<br />
+            fra ditt favoritt fotballags historie. Alle fotballtrøyene våre er
+            originale.
+          </p>
+
+          <a href="drakter.html" class="btn">UTFORSK NÅ &#8594</a>
+        </div>
+        <div class="col-2">
+          <img
+            src="images/Retro Collection FC Porto _ Shop _ COPA.png"
+            alt="https://www.copafootball.com/en/men/fc-porto-1"
+          />
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.height = "0px";
+    function menutoggle() {
+      if (MenuItems.style.height == "0px") {
+        MenuItems.style.height = "200px";
+      }
+      else
+          {
+            MenuItems.style.height = "0px";
+            }
+    }
+  </script>
+ 
+</body>
+</html>
